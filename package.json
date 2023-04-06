@@ -1,0 +1,42 @@
+{
+  "name": "wikiwebxr",
+  "version": "0.1.0",
+  "description": "WebXR Wiki",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:client": "webpack --watch",
+    "watch:server": "node server.js",
+    "watch:open": "start http://localhost:3000",
+    "watch:ngrok": "ngrok http 3000",
+    "watch": "npm-run-all -p -l watch:**",
+    "start": "npm run watch:server",
+    "build": "npm run build:css && npm run build:js",
+    "build:js": "webpack",
+    "build:css": "npx postcss ./src/css/styles.css -o ./public/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://AvanadeXR@dev.azure.com/AvanadeXR/WikiWebXR/_git/WikiWebXR"
+  },
+  "author": "Klaudia",
+  "license": "ISC",
+  "devDependencies": {
+    "@babylonjs/core": "^5.50.1",
+    "cssnano": "^5.1.15",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.5",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "babylonjs": "^5.50.1",
+    "babylonjs-gui": "^5.50.1",
+    "babylonjs-loaders": "^5.50.1",
+    "cannon-es": "^0.20.0",
+    "earcut": "^2.2.4",
+    "express": "^4.18.2"
+  }
+}

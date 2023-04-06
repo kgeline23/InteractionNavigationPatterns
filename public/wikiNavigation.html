@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Navigation Patterns</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">WikiWebXR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="wikiInteraction.html">Interaction Patterns</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="wikiNavigation.html">Navigation Patterns</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/title.png')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Navigation Patterns in Extended Reality</h1>
+                            <span class="meta">
+                                Posted by
+                                Klaudia Konadu-Finke, ASG Avanade
+                                on December 22, 2022
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <!--First section-->
+                        <h2 class="section-heading">What are Navigation patterns?</h2>
+                        <p>Just like in other digital products, navigation is crucial in producing an immersive and accessible environment. In XR, navigation patterns refer to the various methods by which a user can navigate within a virtual environment, including techniques for menu navigation (moving from one scene to another) and user movement within a scene. For this project, we are looking at the latter, the methods a user can maneuver through a scene.</p>
+                        <p>Making a thorough decision when choosing a navigation pattern is important, as it is directly connected to the user's experience. Depending on the pattern and the individual user, there might be a high chance of motion sickness. It is important to continuously test the pattern and make relevant adjustments to minimize this. 
+                            The section below describes the possible patterns in XR.</p>
+                        <!--Types of Navigation Patterns-->
+                        <h2 class="section-heading">The types of Navigation Patterns</h2>                        
+                         <!--CHART-->
+                         <a href="#!"><img class="img-fluid" src="assets/img/navigationPatterns.png" alt="..." /></a>
+                         <span class="caption text-muted">Navigation Pattern categorization.</span>              
+                        <!-- Physical Pattern-->
+                        <h3 class="post-subtitle">Physical Interactions</h3> 
+                        <p>Physical interactions refer to the methods with which the user moves in an environment with the help of the physical body; this gives the user a more natural and intuitive feel.</p> </br>
+                        
+                        <h4 class="post-subtitle">Stationary Navigation</h4>
+                        <p>Stationary navigation refers to the navigation through a scene without having to move from the position in the real world physically. 
+                        </p>
+                        
+                        <h5 class="post-subtitle">In-place Locomotion </h5>
+                        <p>
+                            Locomotion is the method in which a user can move around freely within the virtual environment. 
+                            In this Locomotion, the user remains in a fixed position where users simulate walking movements with their feet or arms. 
+                            This movement is tracked and translated into actions within the virtual environment. 
+                        </p> </br>
+
+                        <h5 class="post-subtitle">Gestures</h5>
+                        <p>
+                            Gestures can be used in navigation by triggering a defined hand movement or pose, which will be detected with hand tracking. The gesture can be used to control the direction and speed of the movement. This pattern can be helpful in scenarios in which a user only needs to do simple movements like moving forwards or backward. However, this technique has its drawbacks, such as if there are many gestures, they might be challenging to remember, or some people cannot perform these due to physical disabilities. 
+                            Gestures can be very nice and playful; however, their implementation should be thought through, and the right use cases found.                 
+                        </p> 
+                        </br>
+
+                        <h4 class="post-subtitle">Room-scale Navigation</h4>
+                        <p>
+                            This refers to the ability to physically move and navigate within a virtual environment and requires dedicated physical space with enough room for the user to move around safely.
+                        </p>
+                        <h5 class="post-subtitle">Room-scale Locomotion</h5>
+                        <p>
+                            In this type of Locomotion, the user can move around a physical space mapped to a virtual environment. 
+                            It allows the user to walk around and explore the virtual environment as they would in the real world. 
+                            For this to be possible, the movements are tracked by sensors, typically mounted on walls or placed around the room. 
+                            This is the most realistic navigation pattern, as the movement in the real world is directly copied into the virtual environment. 
+                        </p>                        
+
+                        <!-- Artificial Pattern-->
+                        <h3 class="post-subtitle">Artificial Navigation</h3> 
+                        <p>
+                            Artificial navigation is a form of navigation used in virtual reality that relies on artificial means rather than physical movement. Under this are the non-continuous and continuous navigations, which are described below.
+                        </p> </br>
+                        <h4 class="post-subtitle">Non-continuous Navigation </h4>
+                        <p>Non-continuous navigation is a method of moving around a virtual environment where the user jumps between different locations or viewpoints.</p>
+
+                        <h5 class="post-subtitle">Teleportation</h5>
+                        <p>
+                            Teleportation is jumping from one place to another without physically moving but rather selecting the next position with a pointer or pressing a button on the controller to move.                         </p> 
+                        </br>
+
+                        <h5 class="post-subtitle">Hotspots</h5>
+                        <p>
+                            Similarly to teleportation, in this pattern the user can jump from one spot to another; however, they can move to defined spots (hotspots) within the virtual environment. 
+                            This is done by either button clicks, joystick movement, or the use of a ray cast to point at the wanted hotspot.
+                        </p> 
+                        </br>
+                        <h5 class="post-subtitle">Gaze</h5>
+                        <p>
+                            With this navigation pattern, the user's eyes are being tracked; the users must look at where they want to go and are teleported to that position. 
+                            This is mostly done in combination with a button click to trigger the teleportation. 
+                        </p>
+                        </br> 
+
+                        <h4 class="post-subtitle">Continuous Navigation </h4>
+                        <p>Continuous navigation is a method of moving around a virtual environment where the user moves continuously, usually done with a controller to simulate walking or running.</p>
+                        
+                        <h5 class="post-subtitle">Controller-based Locomotion</h5>
+                        <p>
+                            This method allows the user to move around freely in the virtual environment with the help of a controller without having to move their physical body.     
+                        </p> 
+                        </br>
+
+
+                        <!-- Scene Navigation -->
+                        <h3 class="post-subtitle">Scene Types</h3>
+                        <h4 class="post-subtitle">Stationary Scene</h4>
+                        <p>
+                            In this, precision tracking is not used; therefore, the user is not able to roam the scene but is placed and fixed in one spot, so when moving from one scene to another, it uses teleportation. 
+                            This can also be done by using a menu to navigate. 
+                        </p></br>                
+                        <h4 class="post-subtitle">Free moving scene</h4>
+                        <p>
+                            Free moving scene allows the user to freely walk around the scene using the viewpoint controls mentioned above.
+                        </p> </br>
+                        <p><a href="wikiInteraction.html">Have a look at Interaction Patterns</a></p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <a href="credits.html"><p class="small text-center text-muted ">3D model credits</p></a>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; WikiWebXR 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

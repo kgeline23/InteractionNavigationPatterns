@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Wiki WebXR</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <!--Imports for Babylon and scenes-->      
+        <script type="module" src = "js/bundle.js"></script>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">WikiWebXR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="wikiInteraction.html">Interaction Patterns</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="wikiNavigation.html">Navigation Patterns</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/title.png')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Interaction and navigation patterns in Metaverse scenario</h1>
+                            <span class="meta">WebXR Wiki, ASG Avanade</span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                            <h1 class="post-title">Project introduction</h1>
+                            <p class="post-subtitle">
+                                The website gives an overview of existing interaction and navigation patterns, with examples to test them with a hands on experience. This is a fully immersive wiki, that is easily acessible over the internet. 
+                                It functions as a demonstration to help with the decision making of relevant patterns as well as a base application for future projects.
+                            </p>
+                            <p> 
+                                The application is created in a web technology that allows developers to create immersive experiences, such as virtual and augmented reality, called WebXR. Since it is on the web, it can be accessed through a web browser on desktop and mobile devices. 
+                                Within WebXR Bayblon.js was used, because it is a popular open-source 3D game engine and framework for building web-based 3D applications.
+                            </p>
+                            <p>Read more about Babylon.js <a href="https://www.babylonjs.com/" target="_blank"> here.</a></p>
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <p>If you have a Meta Quest click <a href="#" target="_blank" onclick="window.open('https://www.oculus.com/open_url/?url='+window.location.href); return false;">here</a> to open this site on your headset.</p>
+                    <p>For a VR experience, open the website within your VR headset and click the <img width="40" height="30" src='./assets/img/bbjsVR.png'/> image in the corner of the scene.</p>
+                    </br>
+                    <!-- Canvas containing the webxr window-->
+                    <div class= "sceneCanvas" style="position: relative">
+                        <canvas id = "sceneCanvas"></canvas>
+                    </div>
+                    </br>
+                    <p>Please fill out <a href="https://forms.office.com/r/4zgHhmLD5K" target="_blank">this questionnaire</a> after having a look through the website and the VR experience.</p>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="wikiInteraction.html"><h2 class="post-title">Interaction patterns</h2></a>
+                        <h3 class="post-subtitle">What are Interaction Patterns</h3>
+                        <p>
+                            They are methods that can be used to interact with the virtual environment. For example, different ways of picking up a cube and resizing it. With the help of sensor and controller information, it is possible to make the movements seem increasingly natural.
+                        </p>    
+                    </div>
+
+                    <!-- Divider-->
+                    <hr class="my-4" />
+
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="wikiNavigation.html"><h2 class="post-title">Navigation patterns</h2> </a>
+                        <h3 class="post-subtitle">What are Navigation Patterns</h3>                        
+                        <p>In XR, navigation patterns refer to the various methods by which a user can navigate within a virtual environment, including techniques for menu navigation (moving from one scene to another) and user movement within a scene. 
+                            For this project we will be looking at the later one, the methods a user can maneuver through a scene.
+                        </p>
+                    </div>
+
+                    <!-- Pager-->
+                    <!-- <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <a href="credits.html"><p class="small text-center text-muted">3D model credits</p></a>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; WikiWebXR 2023</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
